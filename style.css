@@ -1,3 +1,4 @@
+/* FORMATAÇÃO PADRAO DA PAGE */
 :root {
     --cor-primaria: #cccccc;
     --cor-secundaria: #f1e7e7;
@@ -19,7 +20,7 @@ h1 {
 }
 /* para fazer uma coloração separada usamos as tag */
 em strong {
-    color: #0717ee;
+    color: var(--cor-textTitle);
 
 }
 footer {
