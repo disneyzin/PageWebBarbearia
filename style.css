@@ -1,7 +1,8 @@
 :root {
     --cor-primaria: #cccccc;
-    --cor-secundaria: #000000;
+    --cor-secundaria: #f1e7e7;
     --tamanho-fonte: 18px;
+    --cor-textTitle: #0717ee;
 }
 
 body {
@@ -14,19 +15,19 @@ body {
 
 h1 {
     font-size: 25px;
-    color: blue;
+    color: var(--cor-textTitle);
 }
 footer {
    
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color:blue;
+    background-color: var(--cor-textTitle);
     color: var(--cor-secundaria);
     width: 100%;
     height: 3rem;
     margin-top: 2rem;
-    border-top: 2px solid #07aaf5;
+    border-top: 4px solid #5e5a5d;
 }
 
 img {
