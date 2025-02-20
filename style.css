@@ -17,6 +17,11 @@ h1 {
     font-size: 25px;
     color: var(--cor-textTitle);
 }
+/* para fazer uma coloração separada usamos as tag */
+em strong {
+    color: #0717ee;
+
+}
 footer {
    
     display: flex;
