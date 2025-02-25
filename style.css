@@ -1,42 +1,87 @@
-/* FORMATAÇÃO PADRAO DA PAGE */
+/* === FORMATAÇÃO PADRÃO DA PÁGINA === */
 :root {
-    --cor-primaria: #cccccc;
-    --cor-secundaria: #f1e7e7;
-    --tamanho-fonte: 18px;
-    --cor-textTitle: #0717ee;
+  --cor-primaria: #cccccc;
+  --cor-secundaria: #f1e7e7;
+  --cor-textTitle: #0717ee;
+  --tamanho-fonte: 17px;
+  --tamanho-fonte-title: 25px;
 }
 
+/* === ESTILO GERAL === */
 body {
-    background-color: var(--cor-primaria);
-    color: black;
-    font-size: var(--tamanho-fonte);
-    text-align: center;
-    
+  font-size: var(--tamanho-fonte);
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* === SEÇÃO PRINCIPAL === */
+.principal {
+  background-color: var(--cor-primaria);
+  color: black;
+  font-size: var(--tamanho-fonte);
+  text-align: center;
+  padding: 30px;
 }
 
 h1 {
-    font-size: 25px;
-    color: var(--cor-textTitle);
+  font-size: var(--tamanho-fonte-title);
+  color: var(--cor-textTitle);
 }
-/* para fazer uma coloração separada usamos as tag */
-em strong {
-    color: var(--cor-textTitle);
-
+h2 {
+  text-align: center;
+  font-size: var(--tamanho-fonte-title);
 }
-footer {
-   
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--cor-textTitle);
-    color: var(--cor-secundaria);
-    width: 100%;
-    height: 3rem;
-    margin-top: 2rem;
-    border-top: 4px solid #5e5a5d;
+h3{
+  padding-left: 20px;
 }
 
+/* === DESTACAR TEXTO DENTRO DE <em> e <strong> === */
+em > strong {
+  color: var(--cor-textTitle);
+}
+
+/* === SEÇÃO BENEFÍCIOS === */
+.beneficios {
+  font-style: italic;
+  background: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* === LISTA DE BENEFÍCIOS === */
+ul {
+  display: inline-block;
+  vertical-align: top;
+  width: 20%;
+  margin-right: 15%;
+}
+
+ul li {
+  margin: 5px 0;
+  font-size: var(--tamanho-fonte);
+}
+
+/* === IMAGENS === */
 img {
-    width: 100%;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+.imagembeneficios {
+  width: 50%;
+  max-width: 800px;
+}
 
+/* === RODAPÉ === */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--cor-textTitle);
+  color: var(--cor-secundaria);
+  width: 100%;
+  height: 3rem;
+  margin-top: auto;
+  border-top: 4px solid #5e5a5d;
 }
